@@ -1,13 +1,14 @@
 ---
 project: utf8
-tagline: utf8 basics
+tagline: UTF-8 basics for Lua
 ---
 
-v0.91a | LuaJIT 2, Lua 5.1, Lua 5.2
+v0.91a | Lua 5.1, Lua 5.2, LuaJIT 2
 
 ## `local utf8 = require'utf8'`
 
-Low-level module for working with UTF-8 encoded strings. Byte indices are i's, char indices are ci's, and "char" means unicode codepoint. Invalid characters are counted as 1-byte chars so they don't get lost. Validate/sanitize beforehand as needed.
+Low-level module for working with UTF-8 encoded strings. Byte indices are i's, char indices are ci's, and "char" means unicode codepoint.
+Invalid characters are counted as 1-byte chars so they don't get lost. Validate/sanitize beforehand as needed.
 
 ------------------------------------------------- -------------------------------------------------
 `utf8.byte_indices(s) -> iterator<i, valid>`      iterate the chars in a string, returning the byte index followed by a valid flag[^1], for each char.
@@ -30,7 +31,9 @@ Low-level module for working with UTF-8 encoded strings. Byte indices are i's, c
 
 ## Extending
 
-At the heart of the module is the `utf8.next` function, which you can redefine for different semantics. In particular, you can reassign `utf8.next` to `utf8.next_valid` to change the behavior of the entire module to skip on invalid indices. Preferably you would not do that directly on the module table returned by `require`, but make a new module instead:
+At the heart of the module is the `utf8.next` function, which you can redefine for different semantics.
+In particular, you can reassign `utf8.next` to `utf8.next_valid` to change the behavior of the entire module to skip on invalid indices.
+Preferably you would not do that directly on the module table returned by `require`, but make a new module instead:
 
 `my_utf8.lua`:
 
