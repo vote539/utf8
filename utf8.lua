@@ -1,4 +1,4 @@
---utf8 module by Cosmin Apreutesei (unlicensed).
+--utf8 module (Cosmin Apreutesei, public domain).
 --byte indices are i's, char (codepoint) indices are ci's.
 --invalid characters are counted as 1-byte chars so they don't get lost. validate/sanitize beforehand as needed.
 local glue = require'glue' --for autoload

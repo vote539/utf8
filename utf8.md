@@ -1,6 +1,6 @@
 ---
 project: utf8
-tagline: UTF-8 basics for Lua
+tagline: UTF-8 utilities in Lua
 ---
 
 v0.91a | Lua 5.1, Lua 5.2, LuaJIT 2
