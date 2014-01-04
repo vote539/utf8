@@ -1,6 +1,7 @@
 ---
-project: utf8
-tagline: UTF-8 utilities in Lua
+project:  utf8
+tagline:  UTF-8 utilities in Lua
+category: Text Processing
 ---
 
 v0.91a | Lua 5.1, Lua 5.2, LuaJIT 2
