@@ -4,8 +4,6 @@ tagline:  UTF-8 utilities in Lua
 category: Text Processing
 ---
 
-v0.91a | Lua 5.1, Lua 5.2, LuaJIT 2
-
 ## `local utf8 = require'utf8'`
 
 Low-level module for working with UTF-8 encoded strings. Byte indices are i's, char indices are ci's, and "char" means unicode codepoint.
