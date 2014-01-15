@@ -1,7 +1,6 @@
 ---
 project:  utf8
 tagline:  UTF-8 utilities in Lua
-category: Text Processing
 ---
 
 ## `local utf8 = require'utf8'`
