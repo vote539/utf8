@@ -8,6 +8,8 @@ tagline: UTF-8 in Lua
 Low-level module for working with UTF-8 encoded strings. Byte indices are i's, char indices are ci's, and "char" means unicode codepoint.
 Invalid characters are counted as 1-byte chars so they don't get lost. Validate/sanitize beforehand as needed.
 
+## API
+
 ------------------------------------------------- -------------------------------------------------
 `utf8.byte_indices(s) -> iterator<i, valid>`      iterate the chars in a string, returning the byte index followed by a valid flag[^1], for each char.
 `utf8.byte_indices_reverse(s) -> iterator<i>`     iterate the chars in a string in reverse, returning the byte index of each char.
