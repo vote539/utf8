@@ -1,5 +1,4 @@
 ---
-project: utf8
 tagline: UTF-8 in Lua
 ---
 
