@@ -129,6 +129,7 @@ function utf8.sub(s, start_ci, end_ci)
 		end
 		if ci == end_ci + 1 then
 			end_i = i - 1
+			break
 		end
 	end
 	if not start_i then
